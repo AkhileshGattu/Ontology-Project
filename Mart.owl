@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/myontology_mart#"
+     xml:base="http://www.semanticweb.org/ontologies/myontology_mart"
+     xmlns:myontology_mart="http://www.semanticweb.org/ontologies/myontology_mart#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/myontology_mart"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#LocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#LocatedAt">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Brands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#International"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#isGame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#isGame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Games"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Sports"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#isInternational -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#isInternational">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Brands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#International"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#isKitchen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#isKitchen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Brands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#International"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#isSolid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#isSolid">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Brands"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#International"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Price">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Quantity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Brands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Brands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Clothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Clothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Dining"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Home_and_Kitchen"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Clothing"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 4.1.0.20151025-0955) https://github.com/owlcs/owlapi on 5/20/16 10:16 PM</rdfs:comment>
+    </owl:Annotation>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Dining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Dining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Clothing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Sports"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Dining"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 4.1.0.20151025-0955) https://github.com/owlcs/owlapi on 5/20/16 10:16 PM</rdfs:comment>
+    </owl:Annotation>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Electronic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Electronic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Entertainment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Entertainment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Frozen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Frozen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Dining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Entertainment"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Sports"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Electronic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Home_and_Kitchen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Home_and_Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Home_and_Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#International -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#International">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Electronic"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Home_and_Kitchen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Local -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Local">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Mart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Mart">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#LocatedAt"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#isGame"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#isInternational"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#isKitchen"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#isSolid"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Movies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Movies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Entertainment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Non_Frozen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Non_Frozen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Dining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/myontology_mart#Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/myontology_mart#Sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Mart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Clothing"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Clothing&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 4.1.0.20151025-0955) https://github.com/owlcs/owlapi on 5/20/16 10:16 PM</rdfs:comment>
+    </owl:Annotation>
+    <owl:Annotation>
+        <owl:annotatedSource>
+            <owl:Axiom>
+                <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Dining"/>
+                <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+                <owl:annotatedTarget rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt; owl:Thing)</rdfs:comment>
+            </owl:Axiom>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt;) replaced by DisjointClasses(&lt;http://www.semanticweb.org/ontologies/myontology_mart#Dining&gt; owl:Thing)</owl:annotatedTarget>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generated by the OWL API (version 4.1.0.20151025-0955) https://github.com/owlcs/owlapi on 5/20/16 10:16 PM</rdfs:comment>
+    </owl:Annotation>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- Basket_Ball -->
+
+    <owl:NamedIndividual rdf:about="Basket_Ball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Games"/>
+        <isInternational rdf:resource="KansasCity"/>
+        <Quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</Quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- KansasCity -->
+
+    <owl:NamedIndividual rdf:about="KansasCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Titanic -->
+
+    <owl:NamedIndividual rdf:about="Titanic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/myontology_mart#Movies"/>
+        <LocatedAt rdf:resource="KansasCity"/>
+        <Price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</Price>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.0.20151025-0955) https://github.com/owlcs/owlapi -->
+
